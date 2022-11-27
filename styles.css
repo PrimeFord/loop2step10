@@ -39,6 +39,10 @@ body {
   padding: 1.5rem;
   justify-content: center;
 }
+.search input:focus {
+  outline: none;
+  /* padding-left: 1rem; */
+}
 .border {
   border: 1px solid rgba(128, 128, 128, 0.685);
   height: 2rem;
@@ -84,7 +88,8 @@ body {
 }
 .action img:hover {
   cursor: pointer;
-  padding-bottom: 0.2rem;
+  margin-bottom: 0.3rem;
+  transition: all 0.1s linear;
 }
 .avatar1 {
   width: 15%;
@@ -123,9 +128,10 @@ body {
 }
 .body {
   width: 100%;
-  padding-left: 13.5rem;
+  /* padding-left: 13.5rem; */
   padding-top: 1.5rem;
   display: flex;
+  justify-content: center;
 }
 .profile {
   background-color: white;
@@ -442,27 +448,52 @@ body {
   padding-left: 2rem;
   margin-bottom: 1rem;
 }
-/* .sumb {
-  font-size: 1.25rem;
-  padding-left: 0.5rem;
-} */
+.clogo {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.clogo img {
+  height: 2.5rem;
+  width: 6.5rem;
+}
+.dlogo {
+  display: flex;
+  flex-direction: column;
+}
+.dlogo .yo {
+  margin-top: 3rem;
+  height: 1.25rem;
+  width: 6rem;
+}
+.make {
+  display: flex;
+}
+.map {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 2rem;
+  padding-top: 0.8rem;
+}
+.line12 {
+  background-color: gray;
+  height: 4rem;
+  width: 1px;
+}
 .sum20 {
   margin-top: 0.5rem;
-  margin-left: 2rem;
-  padding-left: 1rem;
+  margin-left: 0.5rem;
   margin-bottom: 1rem;
-  border-left: 1px solid gray;
 }
 .dot20 {
-  /* content: "";
-  position: absolute; */
+  left: -1.29rem;
   border: 1px solid gray;
   height: 0.5rem;
   width: 0.5rem;
+  background-color: white;
   border-radius: 50%;
-  /* top: 54rem;
-  left: 30.78rem;
-  z-index: 6; */
+  z-index: 6;
 }
 .yrs {
   color: #808080b4;
@@ -491,7 +522,7 @@ body {
 }
 .span {
   background-color: #80808031;
-  padding: 0.1rem 0.2rem;
+  padding: 0.2rem 0.4rem;
   margin-right: 0.4rem;
 }
 .bulb {
@@ -522,6 +553,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  font-size: 0.75rem;
 }
 .rounde img {
   height: 2.5rem;
@@ -532,7 +564,7 @@ body {
   background-color: white;
   width: 38rem;
   /* height: 29rem; */
-  margin: 0 1.5rem 0 1.5rem;
+  margin: 1.5rem 1.5rem 0;
   border: 1px solid rgba(0, 140, 255, 0.1);
 }
 .third1 {
@@ -550,14 +582,24 @@ body {
   width: 100%;
   display: flex;
   gap: 2.2rem;
-  /* justify-content: space-between; */
+  justify-content: space-between;
   padding: 1.5rem;
+}
+.artic {
+  width: 31%;
+}
+.word {
+  border: 1px solid #80808031;
+  padding: 1rem;
+  line-height: 1.1rem;
+  color: gray;
 }
 .fourth {
   background-color: white;
   width: 38rem;
   /* height: 29rem; */
-  margin: 0 1.5rem 0 1.5rem;
+  margin: 1.5rem 1.5rem 0;
+
   border: 1px solid rgba(0, 140, 255, 0.1);
 }
 .fourth1 {
